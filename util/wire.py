@@ -8,7 +8,7 @@ import socket
 import binascii
 import hashlib
 import struct
-import logging
+import util.logging
 
 
 def data_rep(data: bytes) -> str:
@@ -36,7 +36,7 @@ class CrummyWireProtocol(asyncio.DatagramProtocol):
         self._wirebuffer = []
         self._peer_addrs = set()
         self._transport = None
-        self._logger = logging.get_logger("project-wire")
+        self._logger = util.logging.get_logger("project-wire")
 
     def connection_made(self, transport):
         self._transport = transport
