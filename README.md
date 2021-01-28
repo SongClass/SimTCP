@@ -154,4 +154,4 @@ out of 12 possible points.
 
 ### Acknowledgement
 
-This course project is originally developed by Prof. Chris Kanich in his networking class: https://www.cs.uic.edu/~ckanich/cs450/s18/homework5.html.
+This course project is originally developed by Prof. Chris Kanich and Prof. Brent Stephens in their networking class: https://www.cs.uic.edu/~ckanich/cs450/s18/homework5.html. Thank them for sharing the respository to start with!
