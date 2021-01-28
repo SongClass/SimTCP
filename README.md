@@ -17,7 +17,7 @@ solution.  **You should not make changes to any file other than `project.py`.**
 All other files contain code used to either simulate the unreliable connection,
 or code to help you test your your solution.
 
-Your solution / `project.py` file will be tested against stock versions of all the
+Your solution `project.py` file will be tested against stock versions of all the
 other files in the repo, so any changes you make will not be present at
 grading time.
 
