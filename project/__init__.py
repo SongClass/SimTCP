@@ -1,0 +1,1 @@
+MAX_PACKET = 1400
