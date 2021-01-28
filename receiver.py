@@ -7,8 +7,8 @@ to STDOUT.
 import argparse
 import sys
 import logging
-import project.wire
-import YourFunction
+import util.wire
+import project
 
 PARSER = argparse.ArgumentParser(description="Client script for sending data "
                                              "over a faulty network "
@@ -23,13 +23,13 @@ PARSER.add_argument('-v', '--verbose', action="store_true",
 ARGS = PARSER.parse_args()
 
 if ARGS.verbose:
-    logging.getLogger('YourFunction-receiver').setLevel(logging.DEBUG)
+    logging.getLogger('project-receiver').setLevel(logging.DEBUG)
 
 OUTPUT = open(ARGS.file, 'wb') if ARGS.file else sys.stdout.buffer
 
-SOC = project.wire.bad_socket(ARGS.port)
+SOC = util.wire.bad_socket(ARGS.port)
 
-YourFunction.recv(SOC, OUTPUT)
+project.recv(SOC, OUTPUT)
 
 SOC.close()
 OUTPUT.close()

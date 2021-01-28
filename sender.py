@@ -5,8 +5,8 @@ Client that sends STDIN, over a simulated faulty network connection.
 
 import argparse
 import logging
-import project.wire
-import YourFunction
+import util.wire
+import project
 
 PARSER = argparse.ArgumentParser(description="Client script for sending data "
                                              "over a faulty network "
@@ -20,11 +20,11 @@ PARSER.add_argument('-v', '--verbose', action="store_true",
 ARGS = PARSER.parse_args()
 
 if ARGS.verbose:
-    logging.getLogger('YourFunction-sender').setLevel(logging.DEBUG)
+    logging.getLogger('project-sender').setLevel(logging.DEBUG)
 
 DATA = open(ARGS.file, 'rb').read()
-SOC = project.wire.bad_socket(ARGS.port)
+SOC = util.wire.bad_socket(ARGS.port)
 
-YourFunction.send(SOC, DATA)
+project.send(SOC, DATA)
 
 SOC.close()
