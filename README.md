@@ -1,13 +1,3 @@
-title: Project
-description: Reliable Communication
-due: 
-assigned: 
-additional_css: [syntax.css]
-
-## {{ page.title }}: {{ page.description }}
-
-
-
 ## Project: Reliable Communication
 
 In this project, you will implement reliable communication over an unreliable
@@ -23,15 +13,15 @@ correctly transfers data, in a reasonable amount of time.
 ### Writing Your Solution
 
 This repo contains several tools that will help you simulate and test your
-solution.  **You should not make changes to any file other than `YourFunction.py`.**
+solution.  **You should not make changes to any file other than `project.py`.**
 All other files contain code used to either simulate the unreliable connection,
 or code to help you test your your solution.
 
-Your solution / `YourFunction.py` file will be tested against stock versions of all the
+Your solution / `project.py` file will be tested against stock versions of all the
 other files in the repo, so any changes you make will not be present at
 grading time.
 
-Your solution must be contained in the `send` and `recv` functions in `YourFunction.py`.
+Your solution must be contained in the `send` and `recv` functions in `project.py`.
 You should not change the signatures of these functions, only their bodies.
 These functions will be called by the grading script, with parameters
 controlled by the grading script.  Your solution must be general, and should
@@ -162,3 +152,6 @@ There are 13 points possible on this assignment.  Your solution will be graded
 out of 12 possible points.
 
 
+### Acknowledgement
+
+This course project is originally developed by Prof. Chris Kanich in his networking class: https://www.cs.uic.edu/~ckanich/cs450/s18/homework5.html.
