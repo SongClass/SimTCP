@@ -51,14 +51,21 @@ class CrummyWireProtocol(asyncio.DatagramProtocol):
 
         # First, see if the buffer is full.  If it is, then just drop
         # the packet and pretend nothing happened.
-        if len(self._wirebuffer) == self._buffer_size:
-            self._logger.debug(" !-> Dropping, buffer is full")
+        # Song: changed the following line to enable correct buffer size overflows
+        # if len(self._wirebuffer) >= self._buffer_size:
+        if len(self._wirebuffer) >= self._buffer_size:
+            self._logger.debug(" !!-> Dropping, buffer is full: len(wirebuffer): %d >= buff_size: %d", len(self._wirebuffer), self._buffer_size)
+            # print("drop due to buffer overflow")
+
             return
 
         # Second, see if we should drop the packet.  If so, then we just
         # discard it as if nothing ever happened.
-        if self._loss > 0 and random.random() < self._loss:
-            self._logger.debug(" !-> Dropping to simulate a lossy connection")
+        rand = random.random()
+        # print("loss random:", rand, " threshold:", self._loss)
+        if self._loss > 0 and rand < self._loss:
+            self._logger.debug(" !-> Dropping to simulate a lossy connection: rand: %f < loss %f", rand, self._loss)
+            # print("drop due to loss")
             return
 
         self._logger.debug(" --> Added %d bytes to send in %f seconds",
