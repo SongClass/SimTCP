@@ -151,6 +151,11 @@ Code that earns at least 5 of the above points, and which is both "PEP 8" and
 There are 13 points possible on this assignment.  Your solution will be graded
 out of 12 possible points.
 
+### Q&A
+1. How to implement timer in python with a thread?
+A: refer https://stackoverflow.com/questions/12435211/python-threading-timer-repeat-function-every-n-seconds
+
+
 
 ### Acknowledgement
 
