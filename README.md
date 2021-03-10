@@ -153,8 +153,10 @@ out of 12 possible points.
 
 ### Q&A
 1. How to implement timer in python with a thread?
-A: refer https://stackoverflow.com/questions/12435211/python-threading-timer-repeat-function-every-n-seconds
+A: Refer https://stackoverflow.com/questions/12435211/python-threading-timer-repeat-function-every-n-seconds
 
+2. How to grade your project code?
+A: Run ```python3 grade.py``` to grade your project submission, where the test parameters may change but will be consistent for the whole class.
 
 
 ### Acknowledgement
