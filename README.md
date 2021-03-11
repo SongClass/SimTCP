@@ -155,6 +155,23 @@ out of 12 possible points.
 1. How to implement timer in python with a thread?
 A: Refer https://stackoverflow.com/questions/12435211/python-threading-timer-repeat-function-every-n-seconds
 
+```
+from threading import Timer
+
+class RepeatTimer(Timer):
+    def run(self):
+        while not self.finished.wait(self.interval):
+            self.function(*self.args, **self.kwargs)
+         
+def dummyfn(msg="foo"):
+    print(msg)
+
+timer = RepeatTimer(1, dummyfn)
+timer.start()
+time.sleep(5)
+timer.cancel()
+```
+
 2. How to grade your project code?
 A: Run ```python3 grade.py``` to grade your project submission, where the test parameters may change but will be consistent for the whole class.
 
