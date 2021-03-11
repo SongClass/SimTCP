@@ -172,6 +172,8 @@ time.sleep(5)
 timer.cancel()
 ```
 
+For your easy reference, project_timer.py has an illustration of its potential usage ('python3 project_timer.py' or copy this file to overwrite project.py, then run tester.py to see its effect). Please note this is just an illustration of timer usage, and you will need to dead with ACK and correct logic for retransmission.
+
 2. How to grade your project code?
 A: Run ```python3 grade.py``` to grade your project submission, where the test parameters may change but will be consistent for the whole class.
 
