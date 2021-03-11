@@ -95,6 +95,8 @@ def recv(sock: socket.socket, dest: io.BufferedIOBase) -> int:
     return num_bytes
 
 
+# Below is a program to show timer test alone through 'python3 project_timer.py'
+# It is not needed for the project.
 from threading import Timer
 import time
 
@@ -106,7 +108,11 @@ class RepeatTimer(Timer):
 def dummyfn(msg="foo"):
     print(msg)
 
-timer = RepeatTimer(1, dummyfn)
-timer.start()
-time.sleep(5)
-timer.cancel()
+def main():
+    timer = RepeatTimer(1, dummyfn)
+    timer.start()
+    time.sleep(5)
+    timer.cancel()
+
+if __name__ == '__main__':
+    main()
