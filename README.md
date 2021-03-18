@@ -177,6 +177,8 @@ For your easy reference, project_timer.py has an illustration of its potential u
 2. How to grade your project code?
 A: Run ```python3 grade.py``` to grade your project submission, where the test parameters may change but will be consistent for the whole class.
 
+3. How to submit code in GitHub?
+A: Run ```git add project.py && git commit -m "submit project" && git push```
 
 ### Acknowledgement
 
