@@ -174,10 +174,13 @@ timer.cancel()
 
 For your easy reference, project_timer.py has an illustration of its potential usage ('python3 project_timer.py' or copy this file to overwrite project.py, then run tester.py to see its effect). Please note this is just an illustration of timer usage, and you will need to dead with ACK and correct logic for retransmission.
 
-2. How to grade your project code?
+2. How to implement multi-thread of send() and recv() and GBN in sender side?
+A: Refer https://github.com/haseeb-saeed/go-back-N/blob/master/sender.py
+
+3. How to grade your project code?
 A: Run ```python3 grade.py``` to grade your project submission, where the test parameters may change but will be consistent for the whole class.
 
-3. How to submit code in GitHub?
+4. How to submit code in GitHub?
 A: Run ```git add project.py && git commit -m "submit project" && git push```
 
 ### Acknowledgement
