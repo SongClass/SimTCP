@@ -148,8 +148,8 @@ required throughput, it will receive **2 points**.
 Code that earns at least 5 of the above points, and which is both "PEP 8" and
 "pylint" compatible will earn an additional **1 point**.
 
-There are 13 points possible on this assignment.  Your solution will be graded
-out of 12 possible points.
+There are 21 points possible on this assignment with 10 test cases.  Your solution will be graded
+out of 20 possible points.
 
 ### Q&A
 1. How to implement timer in python with a thread?
