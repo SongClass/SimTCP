@@ -151,6 +151,10 @@ Code that earns at least 5 of the above points, and which is both "PEP 8" and
 There are 21 points possible on this assignment with 10 test cases.  Your solution will be graded
 out of 20 possible points.
 
+#### Bonus offer
+If you may correctly implement Raptor code (one type of practical erasure coding) for relaible data delivery (called RaptorTCP) and conduct a performance comparison of RaptorTCP,  SimTCP and standard TCP socket on various loss ratios, then you will receive **5 extra points** on top of your final grade. Here is python code implementation of Raptor code: https://pypi.org/project/libraptorq/. Sensorweb Research Laboratory will also consider offering a research assistant position to you. 
+
+
 ### Q&A
 1. How to implement timer in python with a thread?
 A: Refer https://stackoverflow.com/questions/12435211/python-threading-timer-repeat-function-every-n-seconds
