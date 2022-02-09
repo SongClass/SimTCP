@@ -122,7 +122,7 @@ each under different simulated test conditions.  For each test case, there is a
 minimum throughput requirement and a timeout for your program to exit.
 The timeout is set as 50% more than the corresponding required throughput.
 
-Each test case will be scored accordingly:
+Each test case will be scored accordingly - total 10 test cases for **20 points**:
 
 | Case                                           | Points Earned |
 | ---------------------------------------------- | ------------- |
@@ -148,11 +148,11 @@ required throughput, it will receive **2 points**.
 Code that earns at least 5 of the above points, and which is both "PEP 8" and
 "pylint" compatible will earn an additional **1 point**.
 
-There are 21 points possible on this assignment with 10 test cases.  Your solution will be graded
-out of 20 possible points.
+There are **21 points possible** on this assignment with 10 test cases.  Your solution will be graded
+out of **20 possible points**.
 
 #### Bonus offer
-If you may correctly implement Raptor code (one type of practical erasure coding) for relaible data delivery (called RaptorTCP) and conduct a performance comparison of RaptorTCP,  SimTCP and standard TCP socket on various loss ratios, then you will receive **5 extra points** on top of your final grade. Here is python code implementation of Raptor code: https://pypi.org/project/libraptorq/. Sensorweb Research Laboratory will also consider offering a research assistant position to you. 
+If you may correctly implement Raptor code (one type of practical erasure coding) for relaible data delivery (called RaptorTCP) and write a 1-2 page performance comparison report of RaptorTCP,  SimTCP and standard TCP socket on various loss ratios, then you will receive **5 extra points** on top of this assignment grade. Here is python code implementation of Raptor code: https://pypi.org/project/libraptorq/. Sensorweb Research Laboratory will also offer a research assistant position to the winner of the class. 
 
 
 ### Q&A
