@@ -184,9 +184,6 @@ A: Refer https://github.com/haseeb-saeed/go-back-N/blob/master/sender.py
 3. How to grade your project code?
 A: Run ```python3 grade.py``` to grade your project submission, where the test parameters may change but will be consistent for the whole class.
 
-4. How to submit code in GitHub?
-A: Run ```git add project.py && git commit -m "submit project" && git push```
-
 ### Acknowledgement
 
 This course project is originally developed by Prof. Chris Kanich and Prof. Brent Stephens in their networking class: https://www.cs.uic.edu/~ckanich/cs450/s18/homework5.html. Thank them for sharing the respository to start with!
