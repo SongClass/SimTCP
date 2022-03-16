@@ -47,16 +47,16 @@ def run_test_case(case: TestCase) -> TestResult:
 
 
 TEST_CASES = [
-    TestCase(TestArguments("grading_data/test-1.bin", "0.15", "0.5", "10"), 9),
-    TestCase(TestArguments("grading_data/test-1.bin", "0.5", "0.5", "10"), 15),
-    TestCase(TestArguments("grading_data/test-2.bin", "0.15", "0.1", "20"), 12),
-    TestCase(TestArguments("grading_data/test-3.bin", "0.05", "0.1", "30"), 16),
-    TestCase(TestArguments("grading_data/test-3.bin", "0.25", "0.1", "30"), 40),
-    TestCase(TestArguments("grading_data/test-4.bin", "0.1", "0.1", "40"), 50),
-    TestCase(TestArguments("grading_data/test-4.bin", "0.4", "0.2", "40"), 50),
-    TestCase(TestArguments("grading_data/test-5.bin", "0.1", "0.1", "50"), 70),
-    TestCase(TestArguments("grading_data/test-6.bin", "0.12", "0.2", "60"), 80),
-    TestCase(TestArguments("grading_data/test-6.bin", "0.2", "0.1", "70"), 80),
+    TestCase(TestArguments("grading_data/test-1.bin", "0.15", "0.05", "10"), 9),
+    TestCase(TestArguments("grading_data/test-1.bin", "0.5", "0.05", "10"), 15),
+    TestCase(TestArguments("grading_data/test-2.bin", "0.15", "0.01", "20"), 12),
+    TestCase(TestArguments("grading_data/test-3.bin", "0.02", "0.01", "50"), 16),
+    TestCase(TestArguments("grading_data/test-3.bin", "0.05", "0.01", "50"), 40),
+    TestCase(TestArguments("grading_data/test-4.bin", "0.02", "0.01", "50"), 50),
+    TestCase(TestArguments("grading_data/test-4.bin", "0.05", "0.02", "50"), 50),
+    TestCase(TestArguments("grading_data/test-5.bin", "0.05", "0.01", "50"), 70),
+    TestCase(TestArguments("grading_data/test-6.bin", "0.02", "0.01", "50"), 80),
+    TestCase(TestArguments("grading_data/test-6.bin", "0.03", "0.01", "50"), 80),
 
     # TestCase(TestArguments("grading_data/test-1.bin", "0", ".5", "10"), 9),
     # TestCase(TestArguments("grading_data/test-1.bin", "0", ".5", "10"), 15),
