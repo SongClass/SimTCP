@@ -81,7 +81,7 @@ also reproduced below.
 
 For example, to see how your solution performs when transmitting a text file,
 with a 5% loss rate, and with a latency of 100ms, you could use the following:
-`python3 tester.py --file test_data.txt --loss .65 --delay 0.3 --buffer 1 --verbose`.
+`python3 tester.py --file test_data.txt --loss 0.3 --delay 0.3 --buffer 10 --verbose`.
 
 
 ### Hints and Suggestions
