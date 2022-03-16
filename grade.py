@@ -50,7 +50,7 @@ TEST_CASES = [
     TestCase(TestArguments("grading_data/test-1.bin", "0.15", "0.05", "10"), 9),
     TestCase(TestArguments("grading_data/test-1.bin", "0.5", "0.05", "10"), 15),
     TestCase(TestArguments("grading_data/test-2.bin", "0.15", "0.01", "20"), 12),
-    TestCase(TestArguments("grading_data/test-3.bin", "0.02", "0.01", "50"), 16),
+    TestCase(TestArguments("grading_data/test-3.bin", "0.01", "0.01", "50"), 16),
     TestCase(TestArguments("grading_data/test-3.bin", "0.05", "0.01", "50"), 40),
     TestCase(TestArguments("grading_data/test-4.bin", "0.02", "0.01", "50"), 50),
     TestCase(TestArguments("grading_data/test-4.bin", "0.05", "0.02", "50"), 50),
