@@ -4,8 +4,8 @@ In this project, you will implement reliable communication over an unreliable
 link, just like TCP.
 
 You will be provided with code that simulates an unreliable link between sender
-and receiver.  This link has a very constrained buffer (only two packets can
-be 'in flight' at a time), and can have arbitrary delay and loss rates.  Your
+and receiver.  This link has a very constrained buffer (only 'buffer' number of packets can
+be 'in flight' at a time, where 'buffer' is a configurable parameter of tester.py), and can have arbitrary delay and loss rates.  Your
 job will be to create and implement a protocol over this connection that
 correctly transfers data, in a reasonable amount of time.
 
