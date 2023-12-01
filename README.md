@@ -153,7 +153,7 @@ out of **20 possible points**.
 
 #### Bonus offer
 
-If you may correctly implement Raptor code (one type of practical erasure coding) for reliable data delivery (called RaptorTCP) and write a 1-2 page performance comparison report of RaptorTCP, SimTCP and standard TCP socket on various loss ratios, then you will receive **5 extra points** on top of this assignment grade. Here is the python code implementation of Raptor code: https://pypi.org/project/libraptorq/. Sensorweb Research Laboratory will also offer a research assistant position to the winner of the class.
+If you may correctly implement Raptor code (one type of practical erasure coding) for reliable data delivery (called RaptorTCP) and write a 1-2 page performance comparison report of RaptorTCP, SimTCP and standard TCP socket on various loss ratios, then you will receive **5 extra points** on top of this assignment grade. Here is the python code implementation of Raptor code: https://pypi.org/project/libraptorq/. 
 
 ### Q&A
 1. How to implement timer in python with a thread?
