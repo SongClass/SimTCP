@@ -160,20 +160,23 @@ If you may correctly implement Raptor code (one type of practical erasure coding
 A: Refer https://stackoverflow.com/questions/12435211/python-threading-timer-repeat-function-every-n-seconds
 
 ```
+import time
 from threading import Timer
 
 class RepeatTimer(Timer):
     def run(self):
         while not self.finished.wait(self.interval):
             self.function(*self.args, **self.kwargs)
-         
+
 def dummyfn(msg="foo"):
     print(msg)
 
-timer = RepeatTimer(1, dummyfn)
+timer = RepeatTimer(1.0, dummyfn)  # interval in seconds
 timer.start()
-time.sleep(5)
-timer.cancel()
+
+time.sleep(5)  # let it run for 5 seconds
+timer.cancel()  # stop repeating
+timer.join()    # optional: wait for thread to finish
 ```
 
 For your easy reference, project_timer.py has an illustration of its potential usage ('python3 project_timer.py' or copy this file to overwrite project.py, then run tester.py to see its effect). Please note this is just an illustration of timer usage, and you will need to dead with ACK and correct logic for retransmission.
